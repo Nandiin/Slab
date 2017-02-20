@@ -52,7 +52,7 @@ playground.xcworkspace
 # Carthage
 #
 # Add this line if you want to avoid checking in source code from Carthage dependencies.
-# Carthage/Checkouts
+Carthage/Checkouts
 
 Carthage/Build
 
@@ -70,3 +70,5 @@ fastlane/test_output
 
 # Custom
 *.swp
+.DS_Store
+

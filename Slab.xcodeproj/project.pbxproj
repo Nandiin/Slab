@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6BCEEA231E5B6744005ADF84 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BCEEA211E5B6744005ADF84 /* Nimble.framework */; };
+		6BCEEA241E5B6744005ADF84 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BCEEA221E5B6744005ADF84 /* Quick.framework */; };
+		6BCEEA261E5B674F005ADF84 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6BCEEA211E5B6744005ADF84 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6BCEEA271E5B674F005ADF84 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6BCEEA221E5B6744005ADF84 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6BD8EB021E4B813F00B074E3 /* Slab.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BD8EAF81E4B813F00B074E3 /* Slab.framework */; };
 		6BD8EB071E4B813F00B074E3 /* SlabTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD8EB061E4B813F00B074E3 /* SlabTests.swift */; };
 		6BD8EB091E4B813F00B074E3 /* Slab.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD8EAFB1E4B813F00B074E3 /* Slab.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -22,7 +26,23 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		6BCEEA251E5B6747005ADF84 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6BCEEA261E5B674F005ADF84 /* Nimble.framework in CopyFiles */,
+				6BCEEA271E5B674F005ADF84 /* Quick.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		6BCEEA211E5B6744005ADF84 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		6BCEEA221E5B6744005ADF84 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		6BD8EAF81E4B813F00B074E3 /* Slab.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Slab.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BD8EAFB1E4B813F00B074E3 /* Slab.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Slab.h; sourceTree = "<group>"; };
 		6BD8EAFC1E4B813F00B074E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -43,6 +63,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BCEEA231E5B6744005ADF84 /* Nimble.framework in Frameworks */,
+				6BCEEA241E5B6744005ADF84 /* Quick.framework in Frameworks */,
 				6BD8EB021E4B813F00B074E3 /* Slab.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -50,12 +72,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6BCEEA201E5B6744005ADF84 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6BCEEA211E5B6744005ADF84 /* Nimble.framework */,
+				6BCEEA221E5B6744005ADF84 /* Quick.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6BD8EAEE1E4B813F00B074E3 = {
 			isa = PBXGroup;
 			children = (
 				6BD8EAFA1E4B813F00B074E3 /* Slab */,
 				6BD8EB051E4B813F00B074E3 /* SlabTests */,
 				6BD8EAF91E4B813F00B074E3 /* Products */,
+				6BCEEA201E5B6744005ADF84 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +157,7 @@
 				6BD8EAFD1E4B813F00B074E3 /* Sources */,
 				6BD8EAFE1E4B813F00B074E3 /* Frameworks */,
 				6BD8EAFF1E4B813F00B074E3 /* Resources */,
+				6BCEEA251E5B6747005ADF84 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -356,6 +389,10 @@
 		6BD8EB101E4B813F00B074E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SlabTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nandiin.SlabTests;
@@ -367,6 +404,10 @@
 		6BD8EB111E4B813F00B074E3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SlabTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nandiin.SlabTests;
