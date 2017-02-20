@@ -13,6 +13,8 @@
 		6BCEEA271E5B674F005ADF84 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6BCEEA221E5B6744005ADF84 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6BD8EB021E4B813F00B074E3 /* Slab.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BD8EAF81E4B813F00B074E3 /* Slab.framework */; };
 		6BD8EB091E4B813F00B074E3 /* Slab.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD8EAFB1E4B813F00B074E3 /* Slab.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6BD8EB201E4B871E00B074E3 /* MatrixSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD8EB1F1E4B871E00B074E3 /* MatrixSpec.swift */; };
+		6BD8EB221E4B879400B074E3 /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD8EB211E4B879400B074E3 /* Matrix.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		6BD8EAFC1E4B813F00B074E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6BD8EB011E4B813F00B074E3 /* SlabTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlabTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BD8EB081E4B813F00B074E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BD8EB1F1E4B871E00B074E3 /* MatrixSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixSpec.swift; sourceTree = "<group>"; };
+		6BD8EB211E4B879400B074E3 /* Matrix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Matrix.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,7 @@
 			children = (
 				6BD8EAFB1E4B813F00B074E3 /* Slab.h */,
 				6BD8EAFC1E4B813F00B074E3 /* Info.plist */,
+				6BD8EB211E4B879400B074E3 /* Matrix.swift */,
 			);
 			path = Slab;
 			sourceTree = "<group>";
@@ -111,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				6BD8EB081E4B813F00B074E3 /* Info.plist */,
+				6BD8EB1F1E4B871E00B074E3 /* MatrixSpec.swift */,
 			);
 			path = SlabTests;
 			sourceTree = "<group>";
@@ -178,10 +184,12 @@
 				TargetAttributes = {
 					6BD8EAF71E4B813F00B074E3 = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					6BD8EB001E4B813F00B074E3 = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -226,6 +234,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BD8EB221E4B879400B074E3 /* Matrix.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +242,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BD8EB201E4B871E00B074E3 /* MatrixSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +359,7 @@
 		6BD8EB0D1E4B813F00B074E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -360,6 +371,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nandiin.Slab;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -367,6 +379,7 @@
 		6BD8EB0E1E4B813F00B074E3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -393,6 +406,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nandiin.SlabTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
