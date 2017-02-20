@@ -12,7 +12,6 @@
 		6BCEEA261E5B674F005ADF84 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6BCEEA211E5B6744005ADF84 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6BCEEA271E5B674F005ADF84 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6BCEEA221E5B6744005ADF84 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6BD8EB021E4B813F00B074E3 /* Slab.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BD8EAF81E4B813F00B074E3 /* Slab.framework */; };
-		6BD8EB071E4B813F00B074E3 /* SlabTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD8EB061E4B813F00B074E3 /* SlabTests.swift */; };
 		6BD8EB091E4B813F00B074E3 /* Slab.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD8EAFB1E4B813F00B074E3 /* Slab.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -47,7 +46,6 @@
 		6BD8EAFB1E4B813F00B074E3 /* Slab.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Slab.h; sourceTree = "<group>"; };
 		6BD8EAFC1E4B813F00B074E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6BD8EB011E4B813F00B074E3 /* SlabTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlabTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6BD8EB061E4B813F00B074E3 /* SlabTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlabTests.swift; sourceTree = "<group>"; };
 		6BD8EB081E4B813F00B074E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,7 +110,6 @@
 		6BD8EB051E4B813F00B074E3 /* SlabTests */ = {
 			isa = PBXGroup;
 			children = (
-				6BD8EB061E4B813F00B074E3 /* SlabTests.swift */,
 				6BD8EB081E4B813F00B074E3 /* Info.plist */,
 			);
 			path = SlabTests;
@@ -236,7 +233,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6BD8EB071E4B813F00B074E3 /* SlabTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
