@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B3051851E5C9C0500DAB920 /* ValueObjectSharedExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3051841E5C9C0500DAB920 /* ValueObjectSharedExample.swift */; };
 		6BCEEA231E5B6744005ADF84 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BCEEA211E5B6744005ADF84 /* Nimble.framework */; };
 		6BCEEA241E5B6744005ADF84 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BCEEA221E5B6744005ADF84 /* Quick.framework */; };
 		6BCEEA261E5B674F005ADF84 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6BCEEA211E5B6744005ADF84 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -42,6 +43,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6B3051841E5C9C0500DAB920 /* ValueObjectSharedExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValueObjectSharedExample.swift; sourceTree = "<group>"; };
 		6BCEEA211E5B6744005ADF84 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		6BCEEA221E5B6744005ADF84 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		6BD8EAF81E4B813F00B074E3 /* Slab.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Slab.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,6 +76,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6B3051831E5C9C0500DAB920 /* fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				6B3051841E5C9C0500DAB920 /* ValueObjectSharedExample.swift */,
+			);
+			path = fixtures;
+			sourceTree = "<group>";
+		};
 		6BCEEA201E5B6744005ADF84 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +125,7 @@
 		6BD8EB051E4B813F00B074E3 /* SlabTests */ = {
 			isa = PBXGroup;
 			children = (
+				6B3051831E5C9C0500DAB920 /* fixtures */,
 				6BD8EB081E4B813F00B074E3 /* Info.plist */,
 				6BD8EB1F1E4B871E00B074E3 /* MatrixSpec.swift */,
 			);
@@ -242,6 +253,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B3051851E5C9C0500DAB920 /* ValueObjectSharedExample.swift in Sources */,
 				6BD8EB201E4B871E00B074E3 /* MatrixSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
