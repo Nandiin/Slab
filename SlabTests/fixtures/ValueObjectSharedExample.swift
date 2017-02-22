@@ -26,7 +26,6 @@ class ValueObjectSharedExampleConfiguration: QuickConfiguration {
                                 "\(stringify(baseObject))\n" +
                                 "same[\(i)]: \n" +
                                 "\(stringify(same))\n"
-                                
                         )
                     }
 				}
