@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		66B0B2CCE1821182AF41E63C /* MatrixOperationSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B0B25C891E4B8ED7F4DDE3 /* MatrixOperationSpec.swift */; };
 		6B3051851E5C9C0500DAB920 /* ValueObjectSharedExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3051841E5C9C0500DAB920 /* ValueObjectSharedExample.swift */; };
 		6BCEEA231E5B6744005ADF84 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BCEEA211E5B6744005ADF84 /* Nimble.framework */; };
 		6BCEEA241E5B6744005ADF84 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BCEEA221E5B6744005ADF84 /* Quick.framework */; };
@@ -43,6 +44,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		66B0B25C891E4B8ED7F4DDE3 /* MatrixOperationSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixOperationSpec.swift; sourceTree = "<group>"; };
 		6B3051841E5C9C0500DAB920 /* ValueObjectSharedExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValueObjectSharedExample.swift; sourceTree = "<group>"; };
 		6BCEEA211E5B6744005ADF84 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		6BCEEA221E5B6744005ADF84 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				6B3051831E5C9C0500DAB920 /* fixtures */,
 				6BD8EB081E4B813F00B074E3 /* Info.plist */,
 				6BD8EB1F1E4B871E00B074E3 /* MatrixSpec.swift */,
+				66B0B25C891E4B8ED7F4DDE3 /* MatrixOperationSpec.swift */,
 			);
 			path = SlabTests;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 			files = (
 				6B3051851E5C9C0500DAB920 /* ValueObjectSharedExample.swift in Sources */,
 				6BD8EB201E4B871E00B074E3 /* MatrixSpec.swift in Sources */,
+				66B0B2CCE1821182AF41E63C /* MatrixOperationSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

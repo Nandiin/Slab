@@ -49,3 +49,9 @@ extension Matrix : Equatable {
         return lhs.rows == rhs.rows && lhs.columns == rhs.columns && lhs.data == rhs.data
     }
 }
+
+extension Matrix {
+    public static func +(lhs: Matrix<T>, rhs: Matrix<T>) -> Matrix<T> {
+        return Matrix<T>(rows: lhs.rows, columns: lhs.columns, copying: zip(lhs.data, rhs.data).flatMap(+))
+    }
+}
